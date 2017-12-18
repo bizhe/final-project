@@ -1,0 +1,239 @@
+/* CONTENTS */
+
+
+.prodet-section{
+    padding: 50px 0;
+    background: $background-color;
+    .prodet-breadcrumb-nav{
+        .breadcrumb{
+            background: $background-color;
+            .breadcrumb-item{
+                a{
+                    color: $main-color;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+            .active{
+                color: $secondary-color;
+            }
+        }
+    }
+    .info-area{
+        padding: 35px 0;
+    }
+    .slide-info-box{
+        .lSAction{
+            .lSPrev, .lSNext{
+                i{
+                    padding: 10px 13px;
+                    border-radius: 50%;
+                    background-color: #f7f7f7;
+                    color: #333333;
+                    border: 1px solid #9b9b9b;
+                    &:hover{
+                        background-color: $secondary-color;
+                        border-color:$secondary-color; 
+                    }
+                }
+                
+            }
+        }
+        .lSPager{
+           .active{
+               border: 1px solid $secondary-color;
+           }
+        }
+    }
+    .info-box{
+        .info-title{
+            padding-bottom: 22px;
+            border-bottom: 1px solid;
+            border-color: #c3c3c3;
+            .rating-info{
+                p{
+                    margin-bottom: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .info-text{
+        padding: 20px 0;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .info-buy{
+        .info-buy-item{
+            .info-price{
+                border-bottom: 1px solid #ececec;
+                border-top: 1px solid #ececec;
+                .badge-best-price{
+                    font-size: 11px;
+                    font-weight: 400;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    color: white;
+                    background: #ff4a4a;
+                    padding: 5px 13px;
+                    border-radius: 10%;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 18px;
+                }
+            }
+            .info-button{
+                border: 1px solid #ececec;
+                border-left: none;
+                .buy-now-button{
+                    @include button-main;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    
+                }
+                .red{
+                    background: #bf2228;
+                }
+                .orange{
+                    background: #f37020;
+                }
+                .green{
+                    background: #86b816;
+                }
+                .blue{
+                    background: #0065cd;
+                }
+            }
+        }
+        
+    }
+    .detail-tabmenu{
+        padding: 50px 0;
+        
+        .upper-nav{
+            background: white;
+            border-bottom: 1px solid $secondary-color;
+            li{
+                a{
+                    padding: 20px 0;
+                    background: none;
+                    color: $main-color;
+                }
+                .active{
+                    background-color: $secondary-color;
+                    color: white;
+                    border-radius: 0;
+                }
+            }
+        }
+        .tab-content{
+            background: white;
+            .desc-content{
+                padding: 30px;
+                .list-content{
+                    margin-bottom: 30px;
+                    border-bottom: 1px solid $main-color;
+                }
+            }
+            .fulldesc-content{
+                padding: 30px;
+                ul{
+                    li{
+                        p{
+                            margin: 0;
+                        }
+                        .col{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .price-content{
+                padding: 30px;
+                ul{
+                    li{
+                        background: $background-color;
+                    }
+                }
+                .canvas-box{
+                    .canvas-box-item{
+                        box-shadow: 0px 0px 17px 3px rgba(149, 161, 167, 0.2);
+                    }
+                    .canv{
+                        position: relative;
+                        strong{
+                            position: absolute;
+                            top: 37%;
+                            left: 53%;
+                            font-size: 16px;
+                        }
+                    }
+                    .percent-text{
+                        font-size: 16px;
+                    }
+                }
+                .diagramm-area{
+                    padding: 20px;
+                    margin-top: 30px;
+                    border: 1px solid #d8d8d8;
+                    .title{
+                        color: $secondary-color;
+                    }
+                    .small-nav{
+                        li{
+                            background: white;
+                            a{
+
+                            }
+                            i{
+                                color: #d8d8d8;
+                                margin-right: 2px;
+                            }
+                            .active{
+                                background: none;
+                                i{
+                                    color: $secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+// Small devices (phones, less than 768px)
+@media (max-width: 767px){
+    .list-content{
+        border-bottom: transparent !important;
+    }
+    .badge-best-price{
+        top:7px !important;
+        left: 6px !important;
+        font-size: 9px !important;
+        padding: 2px !important;
+    }
+    .buy-now-button{
+        font-size: 12px !important;
+        padding: 5px;
+    }
+    .canvas-section{
+        display: none;
+    }
+}
+
+ // Medium devices (tablets, less than 992px)
+ @media (min-width: 767px) and (max-width: 991px){
+    .canvas-section{
+        display: none;
+    }
+ }

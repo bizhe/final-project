@@ -8,6 +8,7 @@
     <title>Project</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/JAZNR.ttf">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -22,24 +24,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                        <div class="social-links">
-                                <a href="#" class="footer-social-links">
-                                    <img src="img/icons/facebook.png" alt="">
-                                </a>
-                                <a href="#" class="footer-social-links">
-                                    <img src="img/icons/twitter.png" alt="">
-                                </a>
-                                <a href="#" class="footer-social-links">
-                                    <img src="img/icons/youtube.png" alt="">
-                                </a>
-                                <a href="#" class="footer-social-links">
-                                    <img src="img/icons/instagram.png" alt="">
-                                </a>
-                                <a href="#" class="footer-social-links">
-                                    <img src="img/icons/linkedin.png" alt="">
-                                </a>
-                            </div>
-                            <!-- alternativ social links -->
+                    <div class="social-links">
+                        <a href="#" class="footer-social-links">
+                            <img src="img/icons/facebook.png" class="img-fluid" alt="">
+                        </a>
+                        <a href="#" class="footer-social-links">
+                            <img src="img/icons/twitter.png" class="img-fluid" alt="">
+                        </a>
+                        <a href="#" class="footer-social-links">
+                            <img src="img/icons/youtube.png" class="img-fluid" alt="">
+                        </a>
+                        <a href="#" class="footer-social-links">
+                            <img src="img/icons/instagram.png" class="img-fluid" alt="">
+                        </a>
+                        <a href="#" class="footer-social-links">
+                            <img src="img/icons/linkedin.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <!-- alternativ social links -->
                     <!-- <div class="social-links">
                         <a href="#">
                             <i class="behance fa fa-behance" aria-hidden="true"></i>
@@ -68,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-3 col-sm-12 text-center">
                     <div class="lang-cur">
                         <img src="img/icons/azer.png" alt="">
                         <div class="btn-group">
@@ -86,11 +88,13 @@
                             <button class="btn btn-link btn-sm dropdown-toggle currency" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Currency
                             </button>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu currency-dropdown">
                                 <a class="dropdown-item" href="#">
-                                    <img src="img/icons/dollar.png" alt=""> Dollar</a>
+                                        <span class="azn">M</span> Manat</a>
                                 <a class="dropdown-item" href="#">
-                                    <img src="img/icons/euro.png" alt=""> Euro</a>
+                                        <span class="azn mr-1">$</span> Dollar</a>
+                                <a class="dropdown-item" href="#">
+                                        <span class="azn mr-1">€</span> Euro</a>
                             </div>
                         </div>
                     </div>
@@ -104,8 +108,8 @@
             <div class="row">
                 <div class="col-md-2 col-sm-12">
                     <div class="logo">
-                        <a href="#">
-                            <img src="img/logo.png" alt="">
+                        <a href="index.html">
+                            <img src="img/logo.png" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -119,43 +123,148 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <div class="col-md-4 half-sm d-flex align-items-center justify-content-lg-end">
                     <div class="login ">
-                        <button type="button" class="btn btn-link login-button" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-link login-button" data-toggle="modal" data-target=".bd-example-modal-lg">
                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                             Login/Register
                         </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+
+                        <div class="modal fade bd-example-modal-lg loginmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="card card-login mx-auto">
-                                            <div class="card-header">Login
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="card-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Email address</label>
-                                                        <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputPassword1">Password</label>
-                                                        <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox"> Remember Password</label>
+                                    <div class="container">
+                                        <div class="row text-left">
+                                            <div class="col-md-12 main-modal">
+                                                <div class="modal-section">
+                                                    <ul class="nav nav-tabs sign-upin-section justify-content-lg-end justify-content-md-center" id="myTab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#login" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="profile" aria-selected="false">Sign Up</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 brandbook">
+                                                                    <img src="img/login-img-1.jpg" class="img-fluid" alt="">
+                                                                    <div class="brandbook-description">
+                                                                        <div class="brandbook-logo">
+                                                                            <img src="img/logo.png" class="img-fluid" alt="">
+                                                                        </div>
+                                                                        <div class="brandbook-info">
+                                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                                elit. Hic labore rem et minus
+                                                                            </p>
+                                                                        </div>
+                                                                        <ul class="brandbook-list">
+                                                                            <li class="list-item">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                            <li class="list-item list-item-margin">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                            <li class="list-item">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-12">
+                                                                    <div class="login-sign text-center">
+                                                                        <div class="social-media">
+                                                                            <a href="#" class="social facebook-social">
+                                                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                                Login
+                                                                            </a>
+                                                                            <a href="#" class="social twitter-social">
+                                                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                                                Login
+                                                                            </a>
+                                                                            <a href="#" class="social google-social">
+                                                                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                                                                Login
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="login-form">
+                                                                            <form>
+                                                                                <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Email address</label>
+                                                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="exampleInputPassword1">Password</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                                                </div>
+                                                                                <button type="submit" class="btn btn-primary user-login-button">Login</button>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="profile-tab">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 brandbook">
+                                                                    <img src="img/login-img-2.jpg" class="img-fluid" alt="">
+                                                                    <div class="brandbook-description">
+                                                                        <div class="brandbook-logo">
+                                                                            <img src="img/logo.png" class="img-fluid" alt="">
+                                                                        </div>
+                                                                        <div class="brandbook-info">
+                                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                                elit. Hic labore rem et minus eum aut
+                                                                            </p>
+                                                                        </div>
+                                                                        <ul class="brandbook-list">
+                                                                            <li class="list-item">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                            <li class="list-item list-item-margin">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                            <li class="list-item">
+                                                                                <div class="list-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                                                    elit. Odio nulla voluptas porro obcaecati</div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-12">
+                                                                    <div class="login-sign text-center">
+                                                                        <div class="login-form">
+                                                                            <form>
+                                                                                <div class="form-group">
+                                                                                    <label for="formGroupExampleInput">Firstname</label>
+                                                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Firstname">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="formGroupExampleInput2">Lastname</label>
+                                                                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Lastname">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Email address</label>
+                                                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label for="exampleInputPassword1">Password</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                                                </div>
+                                                                                <button type="submit" class="btn btn-primary user-login-button">sign up</button>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <a class="btn btn-primary btn-block" href="index.html">Login</a>
-                                                </form>
-                                                <div class="text-center">
-                                                    <a class="d-block small mt-3" href="register.html">Register an Account</a>
-                                                    <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,9 +274,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 d-flex align-items-center justify-content-end">
+                <div class="col-md-1 half-sm d-flex align-items-center justify-content-end">
                     <div class="heart">
-                        <a href="#">
+                        <a href="wishlist.html">
                             <i class="fa fa-heart-o" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -246,8 +355,8 @@
         <div class="container">
             <div class="row">
                 <div class="main-menu ">
-                    <div class="col-md-8 offset-md-4">
-                        <nav class="navbar navbar-expand-lg ">
+                    <div class="col-md-8 offset-lg-4">
+                        <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -255,37 +364,37 @@
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fa fa-home" aria-hidden="true"></i>
                                             HOME
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="index.html">Home</a>
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="comparison.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             COMPARISON PRODUCT
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="comparison.html">Compare</a>
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             SHOP
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item" href="shop-page.html">Shop</a>
+                                            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                                            <a class="dropdown-item" href="product-details.html">Product Details</a>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -308,7 +417,7 @@
                                         <a class="nav-link" href="#">BLOG</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">CONTACT US</a>
+                                        <a class="nav-link" href="contact.html">CONTACT US</a>
                                     </li>
 
                                 </ul>
@@ -445,11 +554,11 @@
                 </div>
                 <div class="products-owl-slider owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-1.jpg" alt="">
+                                        <img src="img/product-img-1.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -492,11 +601,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-2.jpg" alt="">
+                                        <img src="img/product-img-2.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -539,11 +648,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-3.jpg" alt="">
+                                        <img src="img/product-img-3.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -586,11 +695,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-4.jpg" alt="">
+                                        <img src="img/product-img-4.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -633,11 +742,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-5.jpg" alt="">
+                                        <img src="img/product-img-5.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -680,11 +789,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-7.jpg" alt="">
+                                        <img src="img/product-img-7.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -742,11 +851,11 @@
                 </div>
                 <div class="products-owl-slider owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-1.jpg" alt="">
+                                        <img src="img/product-img-1.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -789,11 +898,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-2.jpg" alt="">
+                                        <img src="img/product-img-2.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -836,11 +945,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-3.jpg" alt="">
+                                        <img src="img/product-img-3.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -883,11 +992,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-4.jpg" alt="">
+                                        <img src="img/product-img-4.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -930,11 +1039,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-5.jpg" alt="">
+                                        <img src="img/product-img-5.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -977,11 +1086,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-7.jpg" alt="">
+                                        <img src="img/product-img-7.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1062,11 +1171,11 @@
                 </div>
                 <div class="products-owl-slider trending-slider owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-1.jpg" alt="">
+                                        <img src="img/product-img-1.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1109,11 +1218,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-2.jpg" alt="">
+                                        <img src="img/product-img-2.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1156,11 +1265,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-3.jpg" alt="">
+                                        <img src="img/product-img-3.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1203,11 +1312,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-4.jpg" alt="">
+                                        <img src="img/product-img-4.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1250,11 +1359,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-5.jpg" alt="">
+                                        <img src="img/product-img-5.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1297,11 +1406,11 @@
                         </div>
                     </div>
                     <div class="figure-hover">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-0">
                             <figure class="figure wow fadeIn animated products-slider-item" data-wow-delay="0ms">
                                 <div class="products-item-img">
                                     <a href="#">
-                                        <img src="img/product-img-7.jpg" alt="">
+                                        <img src="img/product-img-7.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="view-button">
@@ -1360,13 +1469,13 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="review-owl-slider owl-carousel owl-theme wow fadeInLeft animated owl-loaded owl-drag">
                         <div class="review-slider-item">
-                            <img src="img/review-img-1.jpg" alt="">
+                            <img src="img/review-img-1.jpg" class="img-fluid" alt="">
                             <figure class="figure">
                                 <figcaption class="figure-caption">
                                     <div class="row">
                                         <div class="col-md-6 row">
                                             <div class="col-md-4">
-                                                <img src="img/review-author-img.png" alt="">
+                                                <img src="img/review-author-img.png" class="img-fluid" alt="">
                                             </div>
                                             <div class="col-md-8">
                                                 <a href="#" class="author">Robert John</a>
@@ -1391,13 +1500,13 @@
                             </figure>
                         </div>
                         <div class="review-slider-item">
-                            <img src="img/review-img-6.jpg" alt="">
+                            <img src="img/review-img-6.jpg" class="img-fluid" alt="">
                             <figure class="figure">
                                 <figcaption class="figure-caption">
                                     <div class="row">
                                         <div class="col-md-6 row">
                                             <div class="col-md-4">
-                                                <img src="img/review-author-img.png" alt="">
+                                                <img src="img/review-author-img.png" class="img-fluid" alt="">
                                             </div>
                                             <div class="col-md-8">
                                                 <a href="#" class="author">Robert John</a>
@@ -1440,7 +1549,7 @@
                         <h2>Weekly Top News</h2>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                     <figure class="figure blog-figure wow fadeInUp animated" data-wow-delay="300ms">
                         <img src="img/blog-img-1.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption class="figure-caption blog-caption">
@@ -1480,7 +1589,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                     <figure class="figure blog-figure wow fadeInUp animated" data-wow-delay="300ms">
                         <img src="img/blog-img-2.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption class="figure-caption blog-caption">
@@ -1520,7 +1629,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                     <figure class="figure blog-figure wow fadeInUp animated" data-wow-delay="300ms">
                         <img src="img/blog-img-3.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption class="figure-caption blog-caption">
@@ -1568,7 +1677,7 @@
     <section class="details-section">
         <div class="container">
             <div class="row wow fadeInLeft animated">
-                <div class="col-md-3 col-sm-12 details-item">
+                <div class="col-lg-3 col-md-12 col-sm-12 details-item">
                     <div class="row">
                         <div class="col-md-3 text-center p-0">
                             <div class="details-icon">
@@ -1585,7 +1694,7 @@
                         <img src="img/angle2.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 details-item">
+                <div class="col-lg-3 col-md-12 col-sm-12 details-item">
                     <div class="row">
                         <div class="col-md-3 text-center p-0">
                             <div class="details-icon">
@@ -1602,7 +1711,7 @@
                         <img src="img/angle2.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 details-item">
+                <div class="col-lg-3 col-md-12 col-sm-12 details-item">
                     <div class="row">
                         <div class="col-md-3 text-center p-0">
                             <div class="details-icon">
@@ -1619,8 +1728,8 @@
                         <img src="img/angle2.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 last-details-item">
-                    <div class="text-center">
+                <div class="col-lg-3 col-md-12 col-sm-12 last-details-item">
+                    <div class="text-center enjoy-message">
                         <img src="img/icons/gift-icon.png" class="img-fluid" alt="">
                         <h3>Enjoy Result</h3>
                     </div>
@@ -1631,6 +1740,27 @@
     </section>
 
     <!-- Footer -->
+    <!-- subscribe for phone -->
+    <section class="subscribe subscribe-resp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 subscribe-main">
+                    <div class="col-md-5 col-sm-12">
+                        <h4 class="subscribe-text">Sign up for the latest updates</h4>
+                    </div>
+                    <div class="col-md-5 col-sm-9">
+                        <div class="input-group subscribe-place">
+                            <input type="email" class="form-control offoutline">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <button type="button" class="btn btn-primary subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe -->
     <section class="subscribe">
         <div class="container">
             <div class="row">
@@ -1818,4 +1948,5 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

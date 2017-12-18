@@ -1,0 +1,94 @@
+/* CONTENTS */
+// 1.wishlist title - 7
+// 2.wishlist main - 35
+// 3.related owl carousel - 78
+
+
+
+
+/* wishlist-title-section */
+.wishlist-title-section{
+    background-image: url("../img/wishlist-slider-img.jpg");
+    padding: 50px 0;
+    .wishlist-title-box{
+        .compare-nav-breadcrumb{
+            .breadcrumb{
+                background: none;
+                justify-content: center;
+                .breadcrumb-item{
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        &:hover{
+                            color:$secondary-color;
+                        }
+                    }
+                }
+                .active{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+/* wishlist-section */
+.wishlist-section{
+    background: $background-color;
+    padding: 50px 0;
+    text-align: center;
+    .wishlist-t-main{
+        background: white;
+        .wishlist-table{
+            .remove-icon{
+                .remove-link{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: $secondary-color;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+            thead{
+                background: $background-color;
+                th{
+                    color: #707070;
+                    padding: 20px 25px;
+                }
+            }
+            th, td{
+                vertical-align: middle;
+            }
+            .in-stock{
+                color: #A0C748;
+            }
+            .out-stock{
+                color:red;
+            }
+            .buy-button{
+                @include button-main;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* related-section */
+.related-section{
+    padding:0 0 50px 0;
+    .related-title-section{
+        &::before{
+            content: none;
+        }
+        h2{
+            font-size: 20px;
+            background: white;
+            margin: 10px 0;
+        }
+    }
+    .related-slider{
+        background: white;
+    }
+}

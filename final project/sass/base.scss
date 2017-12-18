@@ -3,11 +3,16 @@ $main-color: #333333;
 $secondary-color: #FF9800;
 $background-color: #F5F5F5;
 
+@font-face {
+    font-family: "JISAZN";
+    src: url(../fonts/JAZNR.ttf);
+}
+
 @mixin button-main {
     background-color: $secondary-color;
     color: white;
     border-color: transparent;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
     &:hover {
        background-color: white;
@@ -15,6 +20,11 @@ $background-color: #F5F5F5;
        border-color: $secondary-color;
     }
 }
+
+.azn{
+    font-family: "JISAZN";
+}
+
 #scrollUp {
     background-color: $main-color;
     display: none;
@@ -45,3 +55,8 @@ body {
 }
 
 @import 'index';
+@import "comparison";
+@import "wishlist";
+@import "contact";
+@import "shop-page";
+@import "product-details";

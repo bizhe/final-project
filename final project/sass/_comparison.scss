@@ -1,0 +1,185 @@
+/* CONTENTS */
+
+
+
+
+
+/* compare-section */
+.compare-section{
+    background: $background-color;
+    padding: 50px 0;
+    .compare-title-box{
+        .compare-nav-breadcrumb{
+            .breadcrumb{
+                background: none;
+                justify-content: center;
+                .breadcrumb-item{
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        &:hover{
+                            color:$secondary-color;
+                        }
+                    }
+                }
+                .active{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .comparison-table-section{
+        .comparison-table{
+            .added-product{
+                vertical-align: middle;
+                h6{
+                    font-weight: 400;
+                }
+                i{
+                    color: $secondary-color;
+                }
+            }
+            .product-name-buy{
+                .buy-item{
+                    width: 100%;
+                    display: grid;
+                }
+                h6{
+                    font-weight: 400;
+                }
+                .comparison-product-buy{
+                    width: 100%;
+                    background: white;
+                    border-color: #ececec;
+                    color: $main-color;;
+                    font-size: 11px;
+                    font-weight: 700;
+                    padding: 10px 9px;
+                    border-radius: 3px;
+                    margin-bottom: -1px;
+                    &:hover{
+                        background-color: $secondary-color;
+                        color: white;
+                    }
+                    .little-btn-img{
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .middle-align{
+                vertical-align: middle;
+            }
+        }
+
+    }
+
+    .table-accord-box{
+        .accordion-button{
+            text-decoration: none;
+            color: $main-color;
+            display: block;
+            padding: 10px 0;
+            font-weight: 500;
+        }
+        .accordion-table{
+            background: white;
+        }
+    }
+}
+
+/* compare-responsive-section */
+.compare-section-resp{
+    display: none;
+    padding: 50px 0;
+    background: $background-color;
+    .compare-title-box{
+        .compare-nav-breadcrumb{
+            .breadcrumb{
+                background: none;
+                justify-content: center;
+                .breadcrumb-item{
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        &:hover{
+                            color:$secondary-color;
+                        }
+                    }
+                }
+                .active{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .added-product{
+        margin-bottom: 30px;
+        i{
+            color: $secondary-color;
+            font-size: 20px;
+        }
+    }
+    .comparison-resp-table{
+        .details-tog-button{
+            @include button-main;
+            width: 100%;
+            background: $background-color;
+            border-color: $background-color;
+            color: $main-color;
+            &:hover{
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+                color: white;
+            }
+        }
+        .details-list{
+            .active{
+                border-color: initial;
+                background: none;
+                color: $secondary-color;
+            }
+            .comparison-product-buy{
+                width: 100%;
+                background: white;
+                border-color: #ececec;
+                color: $main-color;;
+                font-size: 11px;
+                font-weight: 700;
+                padding: 10px 9px;
+                border-radius: 3px;
+                margin-bottom: -1px;
+                &:hover{
+                    background-color: $secondary-color;
+                    color: white;
+                }
+                .little-btn-img{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// Small devices (phones, less than 768px)
+@media (max-width: 767px){
+    .compare-section{
+        display: none;
+    }
+    .compare-section-resp{
+        display: block;
+    }
+
+}
+
+ // Medium devices (tablets, less than 992px)
+ @media (min-width: 767px) and (max-width: 991px){
+    .compare-section{
+        display: none;
+    }
+    .compare-section-resp{
+        display: block;
+    }
+ }
